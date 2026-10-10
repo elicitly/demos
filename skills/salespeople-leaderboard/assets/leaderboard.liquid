@@ -1,0 +1,28 @@
+<link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<ol class="@container list bg-base-100 rounded-box">
+  {% for p in context.people %}
+  <li class="list-row items-center">
+    <span class="text-2xl font-bold tabular-nums w-6 text-center">{{ forloop.index }}</span>
+    {% if p.photo %}
+    <div class="avatar"><div class="w-14 rounded-full"><img src="{{ p.photo }}" alt=""></div></div>
+    {% else %}
+    {% assign parts = p.name | split: " " %}
+    <div class="avatar avatar-placeholder"><div class="w-14 rounded-full bg-neutral text-neutral-content">
+      <span class="text-lg">{{ parts.first | slice: 0 }}{{ parts.last | slice: 0 }}</span>
+    </div></div>
+    {% endif %}
+    <div class="list-col-grow">
+      <div class="font-semibold">{{ p.name }}</div>
+      <div class="text-sm">{{ p.region }}</div>
+      <progress class="progress progress-primary w-full max-w-48" value="{{ p.quotaPct }}" max="100"
+                aria-label="{{ p.name }}: {{ p.quotaPct }}% of quarterly quota"></progress>
+      <div class="text-xs">{{ p.quotaPct }}% of quarterly quota</div>
+    </div>
+    <dl class="@max-md:row-start-2 @max-md:col-start-2 @max-md:col-span-2 @max-md:text-left grid grid-cols-3 gap-x-4 text-right tabular-nums">
+      <dt class="text-xs">Month</dt><dt class="text-xs">Quarter</dt><dt class="text-xs">Year</dt>
+      <dd class="font-semibold">{{ p.month }}</dd><dd>{{ p.quarter }}</dd><dd>{{ p.year }}</dd>
+    </dl>
+  </li>
+  {% endfor %}
+</ol>

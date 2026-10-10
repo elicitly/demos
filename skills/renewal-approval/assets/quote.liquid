@@ -1,0 +1,24 @@
+<style>
+  .q { font: 15px/1.5 system-ui, sans-serif; }
+  .q h2 { font-size: 1.15rem; margin: 0 0 .25rem; }
+  .q table { border-collapse: collapse; width: 100%; margin: .75rem 0; }
+  .q th, .q td { padding: .4rem .6rem; border-bottom: 1px solid #c8c8c8; text-align: right; }
+  .q th:first-child, .q td:first-child { text-align: left; }
+  .q .flag { display: inline-block; padding: .1rem .5rem; border-radius: 999px; background: #fde68a; color: #422006; font-weight: 600; }
+</style>
+<div class="q">
+  <h2>{{ context.customer }} — {{ context.plan }} renewal</h2>
+  <p>{{ context.termMonths }}-month term · Account executive: {{ context.accountExecutive }}</p>
+  {% if context.discountPct > context.policyMaxDiscountPct %}
+  <p><span class="flag">{{ context.discountPct }}% discount exceeds the {{ context.policyMaxDiscountPct }}% policy limit</span></p>
+  {% endif %}
+  <table>
+    <tr><th></th><th>Current</th><th>Proposed</th></tr>
+    <tr><td>Seats</td><td>{{ context.current.seats }}</td><td>{{ context.proposed.seats }}</td></tr>
+    <tr><td>Price per seat / month</td><td>{{ context.current.pricePerSeat }}</td><td>{{ context.proposed.pricePerSeat }}</td></tr>
+    <tr><td>Discount</td><td>{{ context.current.discountPct }}%</td><td><strong>{{ context.proposed.discountPct }}%</strong></td></tr>
+    <tr><td>Annual total</td><td>{{ context.current.annual }}</td><td><strong>{{ context.proposed.annual }}</strong></td></tr>
+  </table>
+  <p>Annual change: <strong>{{ context.annualChange }}</strong></p>
+  <p>Why: {{ context.reason }}</p>
+</div>

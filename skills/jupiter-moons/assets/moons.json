@@ -1,0 +1,46 @@
+{
+  "planet": {
+    "name": "Jupiter",
+    "blurb": "The largest planet: 139,820 km across, one orbit every 11.86 years.",
+    "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/e/e2/Jupiter_OPAL_2024.png/330px-Jupiter_OPAL_2024.png",
+    "url": "https://en.wikipedia.org/wiki/Jupiter"
+  },
+  "moons": [
+    {
+      "name": "Io",
+      "fact": "The most volcanically active body in the Solar System.",
+      "diameterKm": "3,643",
+      "orbitDays": "1.77",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Io_highest_resolution_natural_color.png/330px-Io_highest_resolution_natural_color.png",
+      "url": "https://en.wikipedia.org/wiki/Io_(moon)",
+      "credit": "NASA (public domain)"
+    },
+    {
+      "name": "Europa",
+      "fact": "An ice shell over a salty ocean that may hold more water than Earth's.",
+      "diameterKm": "3,122",
+      "orbitDays": "3.55",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b3/Europa_-_Perijove_45_%28cropped%29.png/330px-Europa_-_Perijove_45_%28cropped%29.png",
+      "url": "https://en.wikipedia.org/wiki/Europa_(moon)",
+      "credit": "NASA/JPL-Caltech/SwRI/MSSS/Kevin M. Gill (CC BY 2.0)"
+    },
+    {
+      "name": "Ganymede",
+      "fact": "The largest moon in the Solar System — bigger than Mercury.",
+      "diameterKm": "5,268",
+      "orbitDays": "7.15",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/2/21/Ganymede_-_Perijove_34_Composite.png/330px-Ganymede_-_Perijove_34_Composite.png",
+      "url": "https://en.wikipedia.org/wiki/Ganymede_(moon)",
+      "credit": "NASA/JPL-Caltech/SwRI/MSSS/Kevin M. Gill (CC BY 2.0)"
+    },
+    {
+      "name": "Callisto",
+      "fact": "One of the most heavily cratered surfaces known.",
+      "diameterKm": "4,821",
+      "orbitDays": "16.69",
+      "image": "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c6/Callisto_VGR2_C2060635_OGB.png/330px-Callisto_VGR2_C2060635_OGB.png",
+      "url": "https://en.wikipedia.org/wiki/Callisto_(moon)",
+      "credit": "NASA / zelario12 (CC BY-SA 2.0)"
+    }
+  ]
+}

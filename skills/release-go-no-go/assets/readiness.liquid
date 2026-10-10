@@ -1,0 +1,23 @@
+<link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<div class="flex flex-wrap items-center gap-2 mb-3">
+  <span class="text-lg font-bold">{{ context.product }} {{ context.version }}</span>
+  <span class="badge badge-success">Risk: {{ context.risk }}</span>
+</div>
+<ul class="list bg-base-200 rounded-box mb-3">
+  {% for c in context.checks %}
+  <li class="list-row items-center py-2">
+    {% if c.status == "pass" %}
+    <span class="badge badge-success badge-sm">Pass</span>
+    {% else %}
+    <span class="badge badge-error badge-sm">Fail</span>
+    {% endif %}
+    <span class="font-medium">{{ c.name }}</span>
+    <span class="text-sm">{{ c.detail }}</span>
+  </li>
+  {% endfor %}
+</ul>
+<h3 class="font-semibold mb-1">What's in it</h3>
+<ul class="list-disc ps-5">
+  {% for change in context.changes %}<li>{{ change }}</li>{% endfor %}
+</ul>

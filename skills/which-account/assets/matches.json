@@ -1,0 +1,13 @@
+{
+  "message": "Which Harbor account should the call notes go to?",
+  "options": [
+    { "id": "ACC-10233", "name": "Harbor & Pine Outfitters", "city": "Portland, ME", "owner": "Mei Chen", "lastActivity": "Renewal call, Oct 8" },
+    { "id": "ACC-11870", "name": "Harbor Freight Partners", "city": "Long Beach, CA", "owner": "Marcus Johnson", "lastActivity": "Demo, Sep 30" },
+    { "id": "ACC-12954", "name": "Harborview Medical Supply", "city": "Seattle, WA", "owner": "Grace Okafor", "lastActivity": "Email, Aug 14" }
+  ],
+  "headingTemplate": "<th>Account</th><th>City</th><th>Owner</th><th>Last activity</th>",
+  "rowTemplate": "<td><strong>{{ option.name }}</strong><br><span class=\"id\">{{ option.id }}</span></td><td>{{ option.city }}</td><td>{{ option.owner }}</td><td>{{ option.lastActivity }}</td>",
+  "css": "td,th{padding:.45rem .6rem;text-align:left}span.id{font-size:.85em;color:#555}",
+  "labels": { "submit": "Use this account", "decline": "None of these" },
+  "expiresInSeconds": 86400
+}

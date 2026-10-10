@@ -1,0 +1,29 @@
+<link href="https://cdn.jsdelivr.net/npm/daisyui@5" rel="stylesheet">
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+{% assign p = context.planet %}
+<div class="flex items-center gap-4 mb-4">
+  <img src="{{ p.image }}" alt="{{ p.name }}" class="size-20 rounded-full bg-black shrink-0">
+  <div>
+    <h2 class="text-lg font-bold">{{ p.name }}</h2>
+    <p>{{ p.blurb }}</p>
+    <a class="link" href="{{ p.url }}">{{ p.name }} on Wikipedia</a>
+  </div>
+</div>
+<div class="carousel carousel-center w-full gap-3 pb-2 motion-reduce:scroll-auto focus-visible:outline-2 focus-visible:outline-primary rounded-box"
+     tabindex="0" role="region" aria-label="Moons — scroll sideways for more">
+  {% for m in context.moons %}
+  <div class="carousel-item w-64">
+    <div class="card bg-base-200 w-full">
+      <figure class="bg-black"><img src="{{ m.image }}" alt="{{ m.name }}" class="h-36 object-contain"></figure>
+      <div class="card-body p-4 gap-1">
+        <h3 class="card-title text-base">{{ m.name }}
+          <span class="badge badge-sm">{{ forloop.index }} of {{ forloop.length }}</span></h3>
+        <p>{{ m.fact }}</p>
+        <p class="text-sm">{{ m.diameterKm }} km across · orbits in {{ m.orbitDays }} days</p>
+        <a class="link" href="{{ m.url }}">{{ m.name }} on Wikipedia</a>
+        <p class="text-xs mt-1">Image: {{ m.credit }}</p>
+      </div>
+    </div>
+  </div>
+  {% endfor %}
+</div>

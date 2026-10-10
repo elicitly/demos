@@ -1,0 +1,10 @@
+{
+  "month": "October",
+  "people": [
+    { "name": "Mei Chen", "region": "West", "month": "$184K", "quarter": "$512K", "year": "$1.92M", "quotaPct": 118, "photo": "https://www.elicitly.ai/examples/salespeople/mei-chen.jpg" },
+    { "name": "Marcus Johnson", "region": "Central", "month": "$171K", "quarter": "$468K", "year": "$1.74M", "quotaPct": 109, "photo": "https://www.elicitly.ai/examples/salespeople/marcus-johnson.jpg" },
+    { "name": "Sofia Ramirez", "region": "Southeast", "month": "$158K", "quarter": "$455K", "year": "$1.61M", "quotaPct": 104 },
+    { "name": "Arjun Mehta", "region": "Northeast", "month": "$149K", "quarter": "$431K", "year": "$1.58M", "quotaPct": 98, "photo": "https://www.elicitly.ai/examples/salespeople/arjun-mehta.jpg" },
+    { "name": "Grace Okafor", "region": "EMEA", "month": "$142K", "quarter": "$402K", "year": "$1.49M", "quotaPct": 95, "photo": "https://www.elicitly.ai/examples/salespeople/grace-okafor.jpg" }
+  ]
+}

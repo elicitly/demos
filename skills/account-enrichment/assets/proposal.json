@@ -1,0 +1,57 @@
+{
+  "message": "Enrich the Larkspur Robotics account from Apollo and Crunchbase",
+  "columns": {
+    "sources": [
+      { "key": "apollo", "label": "Apollo" },
+      { "key": "crunchbase", "label": "Crunchbase" }
+    ],
+    "current": { "label": "CRM" }
+  },
+  "context": { "objectType": "Account", "recordId": "ACC-20417", "name": "Larkspur Robotics" },
+  "displayTemplate": "<p style=\"font: 15px/1.5 system-ui, sans-serif; margin: 0\"><strong>{{ context.name }}</strong> · {{ context.objectType }} {{ context.recordId }}</p>",
+  "requestedSchema": {
+    "type": "object",
+    "properties": {
+      "name": { "type": "string", "title": "Name", "default": "Larkspur Robotics" },
+      "website": { "type": "string", "format": "uri", "title": "Website", "default": "https://www.larkspur-robotics.example/" },
+      "employeeCount": { "type": "integer", "title": "Employees", "default": 410 },
+      "annualRevenue": { "type": "string", "title": "Annual revenue", "default": "$62M" },
+      "headquarters": { "type": "string", "title": "Headquarters", "default": "Pittsburgh, PA" },
+      "industries": {
+        "type": "array",
+        "title": "Industries",
+        "items": { "enum": ["Robotics", "Logistics", "Manufacturing", "Software"] },
+        "default": ["Robotics", "Logistics"]
+      }
+    },
+    "required": ["name"]
+  },
+  "fields": {
+    "name": {
+      "sources": { "apollo": "Larkspur Robotics", "crunchbase": "Larkspur Robotics, Inc." },
+      "current": "Larkspur Robotics"
+    },
+    "website": {
+      "sources": { "apollo": "https://www.larkspur-robotics.example/", "crunchbase": "https://larkspur-robotics.example" },
+      "current": "http://larkspur-robotics.example"
+    },
+    "employeeCount": {
+      "sources": { "apollo": 410, "crunchbase": 380 },
+      "current": 250
+    },
+    "annualRevenue": {
+      "sources": { "apollo": "$62M", "crunchbase": "$55M–$70M" },
+      "current": null
+    },
+    "headquarters": {
+      "sources": { "apollo": "Pittsburgh, PA", "crunchbase": "Pittsburgh, Pennsylvania" },
+      "current": "Pittsburgh, PA"
+    },
+    "industries": {
+      "sources": { "apollo": ["Robotics", "Logistics"], "crunchbase": ["Robotics", "Manufacturing"] },
+      "current": ["Robotics"]
+    }
+  },
+  "labels": { "submit": "Update account" },
+  "expiresInSeconds": 86400
+}

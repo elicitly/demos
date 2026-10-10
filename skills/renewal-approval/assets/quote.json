@@ -1,0 +1,12 @@
+{
+  "customer": "Harbor & Pine Outfitters",
+  "accountExecutive": "Mei Chen",
+  "plan": "Business",
+  "termMonths": 24,
+  "discountPct": 18,
+  "policyMaxDiscountPct": 15,
+  "current": { "seats": 250, "pricePerSeat": "$45.00", "discountPct": 10, "annual": "$121,500" },
+  "proposed": { "seats": 320, "pricePerSeat": "$48.00", "discountPct": 18, "annual": "$151,142" },
+  "annualChange": "+$29,642 (+24%)",
+  "reason": "Expanding to two new warehouses; competing quote from another vendor at a similar price."
+}
