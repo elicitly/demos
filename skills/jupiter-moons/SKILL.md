@@ -1,11 +1,13 @@
 ---
 name: jupiter-moons
-description: Show Jupiter and its four Galilean moons as a swipeable card carousel with images, facts and Wikipedia links. Use when the user asks about Jupiter's moons or wants a visual tour of them.
+description: Elicitly demo: show Jupiter and its four Galilean moons as a swipeable card carousel with images, facts and Wikipedia links. Use when the user asks for the Jupiter moons demo or a visual tour of Jupiter's moons.
 license: MIT-0
 compatibility: Elicitly Free or Pro (elicit_display) in a host that renders MCP Apps. Images load from https://upload.wikimedia.org, which must be an allowed origin.
 ---
 
 # Jupiter's moons
+
+> **Demo.** Shows sample data from `assets/`. Adapt the template and data to your own use case.
 
 A light, visual `elicit_display` demo: a planet header and a carousel of
 moon cards, each with an image, a fact, and a link to read more.

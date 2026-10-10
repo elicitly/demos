@@ -1,11 +1,13 @@
 ---
 name: rollout-settings
-description: Collect staged-rollout settings (release name, rollout percentage, channel, regions, customer email) from the user in one form. Use when the user wants to configure or start a rollout of the sample release.
+description: Elicitly demo (starts nothing): collect staged-rollout settings for the sample Brightwater Portal release in one form. Use only when the user asks to set up the Brightwater Portal demo rollout or to run the rollout-settings demo.
 license: MIT-0
 compatibility: Elicitly Free or Pro (elicit_form) in a host that renders form elicitation; see https://www.elicitly.ai/docs/elicitation/support-matrix/
 ---
 
 # Rollout settings
+
+> **Demo.** Uses made-up sample data from `assets/`, connects to no real system, and changes nothing. It's a reference for how to use Elicitly: adapt it to your own data and systems.
 
 One `elicit_form` dialog collects every answer the rollout needs — text, a
 number, a toggle, a single choice and a multi-choice — instead of five rounds

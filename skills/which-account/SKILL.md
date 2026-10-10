@@ -1,11 +1,13 @@
 ---
 name: which-account
-description: When a customer name matches several CRM accounts, ask a human to pick the right one on a review page before logging anything. Use when the user asks to log the call notes for "Harbor" (or any ambiguous account name in the sample data).
+description: Elicitly demo (sample data, logs nothing): when a name matches several sample CRM accounts, ask a human to pick the right one on a review page. Use only when the user asks to log call notes for Harbor in the demo or to run the which-account demo.
 license: MIT-0
 compatibility: Requires Elicitly Pro (elicit_selection, elicit_await, elicit_result).
 ---
 
 # Which account?
+
+> **Demo.** Uses made-up sample data from `assets/`, connects to no real system, and changes nothing. It's a reference for how to use Elicitly: adapt it to your own data and systems.
 
 "Log this against Harbor" matches three accounts. Rather than guess, the agent
 lists the candidates with enough detail to tell them apart and lets a human

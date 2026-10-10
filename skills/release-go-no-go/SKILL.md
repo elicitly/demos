@@ -1,11 +1,13 @@
 ---
 name: release-go-no-go
-description: Present a release readiness card (checks, changes, risk), then ask the user to confirm before shipping. Use when the user asks to ship, release, or deploy the sample release.
+description: Elicitly demo (sample data, deploys nothing): present a sample release readiness card, then ask the user to confirm before shipping. Use only when the user asks to ship the Brightwater Portal demo release or to run the release-go-no-go demo.
 license: MIT-0
 compatibility: Elicitly Free or Pro (elicit_display, elicit_confirm). The confirm dialog needs a host that renders form elicitation; see https://www.elicitly.ai/docs/elicitation/support-matrix/
 ---
 
 # Release go/no-go
+
+> **Demo.** Uses made-up sample data from `assets/`, connects to no real system, and changes nothing. It's a reference for how to use Elicitly: adapt it to your own data and systems.
 
 The agent shows what is about to ship, then stops and asks. The question is a
 real dialog answered by a human, not a "should I continue?" line in chat that

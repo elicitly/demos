@@ -5,6 +5,14 @@ displays inline in chat, and human decisions an agent can't fake. Each skill
 uses fixed sample data, so it behaves the same every time you run it. Copy
 them, change them, and make them yours.
 
+> [!IMPORTANT]
+> These are demos, not integrations. Every skill reads made-up sample data
+> from its `assets/` folder, connects to no real system, and changes
+> nothing: "approving" the renewal sends no quote, and "shipping" the
+> release deploys nothing. They're a reference for using Elicitly. To use one
+> for real, replace the sample data with a query against your own system and
+> the "In a real skill…" step with the real action.
+
 ## The demos
 
 Free demos run on the open-source [Free Edition](https://github.com/elicitly/elicitly)
@@ -13,13 +21,13 @@ Free demos run on the open-source [Free Edition](https://github.com/elicitly/eli
 
 | Demo | Tools | Edition | Try saying |
 | --- | --- | --- | --- |
-| [salespeople-leaderboard](skills/salespeople-leaderboard/) | `elicit_display` | Free | "Who are our top salespeople this month?" |
-| [jupiter-moons](skills/jupiter-moons/) | `elicit_display` | Free | "Show me Jupiter's moons." |
-| [release-go-no-go](skills/release-go-no-go/) | `elicit_display`, `elicit_confirm` | Free | "Ship the Brightwater Portal release." |
-| [rollout-settings](skills/rollout-settings/) | `elicit_form` | Free | "Set up the rollout for v3.2.0." |
-| [renewal-approval](skills/renewal-approval/) | `elicit_approval` | Pro | "Send the Harbor & Pine renewal for approval." |
-| [account-enrichment](skills/account-enrichment/) | `elicit_proposal` | Pro | "Enrich the Larkspur Robotics account." |
-| [which-account](skills/which-account/) | `elicit_selection` | Pro | "Log my call notes for Harbor." |
+| [salespeople-leaderboard](skills/salespeople-leaderboard/) | `elicit_display` | Free | "Show the demo sales leaderboard." |
+| [jupiter-moons](skills/jupiter-moons/) | `elicit_display` | Free | "Show me the Jupiter moons demo." |
+| [release-go-no-go](skills/release-go-no-go/) | `elicit_display`, `elicit_confirm` | Free | "Ship the Brightwater Portal demo release." |
+| [rollout-settings](skills/rollout-settings/) | `elicit_form` | Free | "Set up the Brightwater Portal demo rollout." |
+| [renewal-approval](skills/renewal-approval/) | `elicit_approval` | Pro | "Send the Harbor & Pine demo renewal for approval." |
+| [account-enrichment](skills/account-enrichment/) | `elicit_proposal` | Pro | "Enrich the Larkspur Robotics demo account." |
+| [which-account](skills/which-account/) | `elicit_selection` | Pro | "Log call notes for Harbor in the demo." |
 
 One more needs no skill at all. Ask your agent: "Run elicit_doctor with
 probeElicitation true and tell me what this host supports." It reports
@@ -62,7 +70,10 @@ Each skill is a folder with a `SKILL.md` and an `assets/` folder:
   depends on what the model improvises;
 - the sample data (`*.json`), standing in for a CRM, CI system or ERP.
 
-To adapt one, swap the JSON for a real query and keep the template. See the
+Each skill's description is scoped to its demo ("Use only when the user asks
+for the demo…"), so an installed demo shouldn't pick up a real question and
+answer it with sample data. To adapt one, swap the JSON for a real query, keep the
+template, and rewrite the description for your real use case. See the
 [template rules](https://www.elicitly.ai/docs/templates/) and the
 [tool reference](https://www.elicitly.ai/docs/tools/).
 

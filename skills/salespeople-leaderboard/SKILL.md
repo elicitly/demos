@@ -1,11 +1,13 @@
 ---
 name: salespeople-leaderboard
-description: Show this month's top salespeople as a ranked card with photos, sales totals and quota progress. Use when the user asks who is leading in sales, for the sales leaderboard, or for top performers this month.
+description: Elicitly demo (made-up sample data, not your CRM): show a sample sales leaderboard as a ranked card with photos, sales totals and quota progress. Use only when the user asks for the demo sales leaderboard or to run the salespeople-leaderboard demo.
 license: MIT-0
 compatibility: Elicitly Free or Pro (elicit_display) in a host that renders MCP Apps. Photos load from https://www.elicitly.ai, which must be an allowed origin.
 ---
 
 # Salespeople leaderboard
+
+> **Demo.** Uses made-up sample data from `assets/`, connects to no real system, and changes nothing. It's a reference for how to use Elicitly: adapt it to your own data and systems.
 
 Shows a sales leaderboard with `elicit_display` instead of a Markdown table.
 The layout lives in a template, so it looks the same every time; you only
