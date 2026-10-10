@@ -1,6 +1,6 @@
 ---
 name: account-enrichment
-description: Elicitly demo (sample data, writes nothing): propose updates to a sample CRM account from two enrichment sources and let a human review, edit and pick fields in a diff grid. Use only when the user asks to enrich the Larkspur Robotics demo account or to run the account-enrichment demo.
+description: Elicitly demo (sample data, writes nothing). Propose updates to a sample CRM account from two enrichment sources and let a human review, edit and pick fields in a diff grid. Use only when the user asks to enrich the Larkspur Robotics demo account or to run the account-enrichment demo.
 license: MIT-0
 compatibility: Requires Elicitly Pro (elicit_proposal, elicit_await, elicit_result).
 ---

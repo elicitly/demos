@@ -1,6 +1,6 @@
 ---
 name: which-account
-description: Elicitly demo (sample data, logs nothing): when a name matches several sample CRM accounts, ask a human to pick the right one on a review page. Use only when the user asks to log call notes for Harbor in the demo or to run the which-account demo.
+description: Elicitly demo (sample data, logs nothing). When a name matches several sample CRM accounts, ask a human to pick the right one on a review page. Use only when the user asks to log call notes for Harbor in the demo or to run the which-account demo.
 license: MIT-0
 compatibility: Requires Elicitly Pro (elicit_selection, elicit_await, elicit_result).
 ---

@@ -1,6 +1,6 @@
 ---
 name: renewal-approval
-description: Elicitly demo (sample data, sends nothing): send a sample discounted renewal quote for manager approval on a review page, wait for the decision, and report the outcome. Use only when the user asks to send the Harbor & Pine demo renewal for approval or to run the renewal-approval demo.
+description: Elicitly demo (sample data, sends nothing). Send a sample discounted renewal quote for sign-off on a review page, wait for the decision, and report the outcome. Use only when the user asks to send the Harbor & Pine demo renewal for approval or to run the renewal-approval demo.
 license: MIT-0
 compatibility: Requires Elicitly Pro (elicit_approval, elicit_await, elicit_result).
 ---
@@ -9,9 +9,10 @@ compatibility: Requires Elicitly Pro (elicit_approval, elicit_await, elicit_resu
 
 > **Demo.** Uses made-up sample data from `assets/`, connects to no real system, and changes nothing. It's a reference for how to use Elicitly: adapt it to your own data and systems.
 
-The quote's discount exceeds policy, so a manager must approve it. The
-manager sees exactly the quote that will be sent, on a review page that works
-on any device, and the decision is recorded with an audit trail.
+The quote's discount exceeds policy, so it needs a human's sign-off before
+it goes out. The reviewer sees exactly the quote that will be sent, on a
+review page that works on any device, and the decision is recorded with an
+audit trail. (Today the reviewer is the person who made the request.)
 
 ## Steps
 

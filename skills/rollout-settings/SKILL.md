@@ -1,6 +1,6 @@
 ---
 name: rollout-settings
-description: Elicitly demo (starts nothing): collect staged-rollout settings for the sample Brightwater Portal release in one form. Use only when the user asks to set up the Brightwater Portal demo rollout or to run the rollout-settings demo.
+description: Elicitly demo (starts nothing). Collect staged-rollout settings for the sample Brightwater Portal release in one form. Use only when the user asks to set up the Brightwater Portal demo rollout or to run the rollout-settings demo.
 license: MIT-0
 compatibility: Elicitly Free or Pro (elicit_form) in a host that renders form elicitation; see https://www.elicitly.ai/docs/elicitation/support-matrix/
 ---

@@ -1,6 +1,6 @@
 ---
 name: release-go-no-go
-description: Elicitly demo (sample data, deploys nothing): present a sample release readiness card, then ask the user to confirm before shipping. Use only when the user asks to ship the Brightwater Portal demo release or to run the release-go-no-go demo.
+description: Elicitly demo (sample data, deploys nothing). Present a sample release readiness card, then ask the user to confirm before shipping. Use only when the user asks to ship the Brightwater Portal demo release or to run the release-go-no-go demo.
 license: MIT-0
 compatibility: Elicitly Free or Pro (elicit_display, elicit_confirm). The confirm dialog needs a host that renders form elicitation; see https://www.elicitly.ai/docs/elicitation/support-matrix/
 ---

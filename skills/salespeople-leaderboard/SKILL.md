@@ -1,6 +1,6 @@
 ---
 name: salespeople-leaderboard
-description: Elicitly demo (made-up sample data, not your CRM): show a sample sales leaderboard as a ranked card with photos, sales totals and quota progress. Use only when the user asks for the demo sales leaderboard or to run the salespeople-leaderboard demo.
+description: Elicitly demo (made-up sample data, not your CRM). Show a sample sales leaderboard as a ranked card with photos, sales totals and quota progress. Use only when the user asks for the demo sales leaderboard or to run the salespeople-leaderboard demo.
 license: MIT-0
 compatibility: Elicitly Free or Pro (elicit_display) in a host that renders MCP Apps. Photos load from https://www.elicitly.ai, which must be an allowed origin.
 ---

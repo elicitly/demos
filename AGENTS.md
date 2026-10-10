@@ -58,6 +58,10 @@ calls against that reference, not against memory.
 
 ## Checking a change
 
+- Every `SKILL.md` frontmatter parses as YAML and `name` matches its
+  folder. Watch for `: ` (colon, space) inside an unquoted value such as
+  `description`: YAML reads it as a new key and the skill fails to load.
+  Rephrase, or quote the whole value.
 - Every `assets/*.json` parses.
 - Every template renders with [LiquidJS](https://liquidjs.com/) against its
   sample data, with `jsTruthy: true` and `outputEscape: "escape"`, which
