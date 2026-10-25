@@ -9,10 +9,10 @@ compatibility: Requires Elicitly Pro (elicit_approval, elicit_await, elicit_resu
 
 > **Demo.** Uses made-up sample data from `assets/`, connects to no real system, and changes nothing. It's a reference for how to use Elicitly: adapt it to your own data and systems.
 
-The quote's discount exceeds policy, so it needs a human's sign-off before
-it goes out. The reviewer sees exactly the quote that will be sent, on a
-review page that works on any device, and the decision is recorded with an
-audit trail. (Today the reviewer is the person who made the request.)
+Before a quote reaches a customer, the person who asked for it sees exactly
+what will be sent, on a review page that works on any device, and decides.
+The decision is recorded with the quote it applied to. This quote's discount
+is over the usual limit, so the review page flags it.
 
 ## Steps
 
@@ -26,7 +26,7 @@ audit trail. (Today the reviewer is the person who made the request.)
      {
        "type": "object",
        "properties": {
-         "note": { "type": "string", "title": "Note to the account executive", "maxLength": 500 }
+         "note": { "type": "string", "title": "Note (saved with your decision)", "maxLength": 500 }
        }
      }
      ```
